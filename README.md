@@ -1,5 +1,7 @@
 # IoT Telcom Expense Manager
 
+Video Demo: [Watch the project walkthrough on YouTube](https://youtu.be/QIDkNT4u9Qo)
+
 A web app for reviewing corporate SIM usage, tariffs and invoices. This is Giancarlo Balan’s CS50x final project.
 
 When a company uses several operators, its inventory, usage and billing files can be difficult to compare. This project brings those records into one place. You can check how costs change over time, look into roaming charges and find invoices that do not match the expected amount.
@@ -130,7 +132,7 @@ Hosting must provide HTTPS. Keep dependencies updated, keep secrets and real cus
 
 Do not publish the writable local version as it stands. It has no login or separation between visitors’ data. Public uploads would need those protections, upload rate limits and further security testing.
 
-Other possible additions include SIM status changes, tariff changes over time, shared allowances and more detailed billing rules. The project video and CS50 submission are still pending. The video link can be added here once it is recorded.
+Other possible additions include SIM status changes, tariff changes over time, shared allowances and more detailed billing rules. The project walkthrough is linked at the top of this README. The CS50 submission is still pending.
 
 ## Map source
 
