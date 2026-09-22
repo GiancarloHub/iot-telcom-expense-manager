@@ -1,0 +1,4 @@
+{
+  "version": "0.2.0",
+  "configurations": [{"name": "Telcom Expense Manager", "type": "debugpy", "request": "launch", "program": "${workspaceFolder}/app.py", "console": "integratedTerminal", "justMyCode": true}]
+}

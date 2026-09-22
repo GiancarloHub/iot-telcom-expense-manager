@@ -1,0 +1,42 @@
+.comparison-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 15px}
+.operator-switches{display:flex;gap:7px;flex-wrap:wrap}
+.operator-switches button{display:flex;align-items:center;gap:7px;border:1px solid #dce5e1;border-radius:7px;background:#fff;color:#52665f;padding:8px 13px;font-size:11px;min-height:35px}
+.operator-switches button small{color:#8b9b95;font-size:9px}
+.operator-switches i,.comparison-bar-heading i{width:8px;height:8px;display:inline-block;flex-shrink:0;border-radius:50%;background:var(--operator-color)}
+.operator-switches button[aria-pressed=true]{border-color:var(--operator-color,#547b6e);background:#eef4f1;color:#243e35;font-weight:600}
+.comparison-period{font-size:11px;color:#7b8f83;white-space:nowrap}
+.comparison-layout{display:grid;grid-template-columns:minmax(0,1.85fr) minmax(280px,1fr);gap:17px;margin-bottom:22px}
+.comparison-layout .card-header{padding:17px 19px 0}
+.comparison-layout h2{font-size:14px}
+.comparison-layout .card-header p{font-size:10px}
+.comparison-layout .small-tag{font-size:8px;padding:3px 6px}
+.comparison-main,.comparison-side{min-width:0}
+.comparison-side{display:flex;flex-direction:column}
+.comparison-chart{padding:8px 12px 0;position:relative}
+.comparison-chart svg{width:100%;display:block;overflow:visible;max-height:245px}
+.comparison-axis{font-size:11px;fill:#778c83}
+.stack-total{font-size:11px;fill:#405f51;font-weight:600}
+.selected-month{stroke:#b1c6bc;stroke-width:1;stroke-dasharray:4 4}
+.comparison-legend{display:flex;gap:22px;align-items:center;justify-content:center;padding:10px 15px 16px;flex-wrap:wrap;font-size:10px;color:#53685e}
+.comparison-legend span{display:flex;align-items:center;gap:6px}
+.comparison-legend i{width:16px;height:3px;display:inline-block;border-radius:2px}
+.comparison-legend small{font-size:8px;color:#8c9d92}
+.metric-switches{display:flex;gap:3px;margin:12px 19px 0;padding:3px;background:#f1f5f2;border-radius:6px;width:fit-content}
+.metric-switches button{border:0;background:transparent;padding:5px 11px;font-size:10px;color:#7c8f83;border-radius:4px}
+.metric-switches button[aria-pressed=true]{background:white;color:#285743;box-shadow:0 1px 3px #18362614}
+.operator-comparison-bars{padding:18px 19px 8px;display:grid;gap:18px;margin:auto 0}
+.comparison-bar-heading{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:7px;font-size:11px;color:#5c7065}
+.comparison-bar-heading span{display:flex;align-items:center;gap:7px}
+.comparison-bar-heading strong{font-size:12px;font-weight:600;color:#294b3b;white-space:nowrap;font-variant-numeric:tabular-nums}
+.comparison-bar-track{height:10px;border-radius:3px;background:#f2f5f3;overflow:hidden}
+.comparison-bar-track>div{height:100%;border-radius:3px}
+.comparison-footnote{padding:12px 19px 16px;font-size:9px;color:#8b9b91}
+.comparison-footnote a{color:var(--green)}
+.chart-tooltip{position:absolute;top:12px;z-index:4;white-space:pre-line;pointer-events:none;background:#183930f2;color:white;padding:10px 12px;box-shadow:0 5px 20px #0b292626;border-radius:8px;font-size:11px;line-height:1.8;max-width:calc(100% - 16px)}
+.chart-tooltip[hidden]{display:none}
+.operator-logo.Movistar{color:#2e688a;background:#edf3f7}
+.operator-logo.Vodafone{color:#9b414f;background:#f8edef}
+.operator-logo.Orange{color:#d86d28;background:#fff2e7}
+@media(max-width:1100px){.comparison-layout{grid-template-columns:minmax(0,1.45fr) minmax(245px,1fr)}.comparison-layout .card-header{flex-wrap:wrap}.comparison-legend{gap:12px}}
+@media(max-width:980px){.comparison-layout{grid-template-columns:minmax(0,1fr) minmax(240px,.75fr)}.comparison-axis,.stack-total{font-size:13px}}
+@media(max-width:760px){.comparison-layout{grid-template-columns:1fr}.comparison-toolbar{align-items:flex-start}.comparison-period{display:none}.operator-switches button{font-size:10px;padding:7px 9px}.operator-switches small{display:none}.comparison-chart{overflow-x:auto;padding:8px 10px 0}.comparison-chart svg{min-width:460px;max-height:none}.comparison-main{overflow:hidden}.comparison-legend{gap:10px;font-size:9px}.comparison-legend small{display:none}.metric-switches{margin-left:12px}.metric-switches button{font-size:9px;padding:5px 9px}.operator-comparison-bars{gap:14px}.comparison-side .card-header{flex-wrap:nowrap}.comparison-axis,.stack-total{font-size:11px}}
